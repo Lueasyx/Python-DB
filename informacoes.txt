@@ -1,0 +1,24 @@
+Insira no envio da atividade:
+
+    - Grupo que realizou a atividade;
+    - Breve comentário sobre qual tipo de negócio irá desenvolver;
+    - Breve explicações sobre a estrutura que foi criada (comentar sobre a função de cada uma das tabelas, chaves e afins).
+
+Enviar esses tópicos em um arquivo "informacoes.txt"
+------------------------------------------------------------------------------------------------------------
+
+Grupo: Manuela Soares Belo \\ R.A.: 1934973
+       Luis Eduardo de Lima Santana \\ R.A.: 1934802
+
+************************************************************************************************************
+
+Tipo de negócio: A Base da idéia é criar uma Escola de cursos online no estilo ALURA.
+
+************************************************************************************************************
+
+explicação sobre a estrutura: Fizemos quatro tabelas de dados e uma tabela de ligação. A primeira tabela é a de cadastro de alunos, onde utilizamos o CPF como primary key e também pedimos as informações de nome, email, telefone e também conectamos ele com uma chave estrangeira de pagamento.
+A segunda tabela é a de cadastro de cursos, a primary key dela é o ID, as outras informaçõesda tabela são, nome do curso e o id do professor, onde é ligado o curso ao professor.
+A terceira tabela é a tabela de ligação, onde o primeiro campo é o ID do aluno e o segundo é o ID do curso.
+A quarta tabela é a de cadastro de professores, as informações dela são o nome do professor, email, telefone e seu id, onde é identificado sua primary key.
+A quinta e ultima tabela é a tabela de pagamento, nela possui o id do pagamento, que é usado como foreign key na tabela aluno, a forma de pagamento e o valor da assinatura.
+Inportante frisar que todas as primary keys são Int, not null, unique e auto_increment, com exceção do CPF do aluno, que é configurado apenas como not null e unique. 
